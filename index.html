@@ -38,11 +38,11 @@
 
     <body>
         <!-- header -->
-        <header class="header">
-            <div class="container">
-                <nav class="header__nav">
-                    <div class="header__nav__wrap">
-                        <ul>
+        <header class="header">           
+            <nav class="header__nav">
+                <div class="nav__wrap">
+                    <div class="container">
+                        <ul class="header__nav__list">
                             <li>
                                 <a href="#">Каталог</a>
                             </li>
@@ -53,7 +53,7 @@
                                 <a href="#">Отзывы</a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="logo">
                                     <img src="img/logo.png" alt="Botanika - Авторские букеты в Петербурге">
                                 </a>
                             </li>
@@ -68,23 +68,23 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
-                <div class="header__promo">
-                    <div class="header__promo--text">
-                        <h1>Авторские букеты 
-                            <span> в Петербурге</span>
-                        </h1>
-                        <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-                        <a href="#" class="btn">Смотреть каталог</a>
-                    </div>
+                </div>
+            </nav>
+            <div class="container header__promo">
+                <div class="header__promo--text">
+                    <h1>Авторские букеты 
+                        <span> в Петербурге</span>
+                    </h1>
+                    <p>Оригинальные свежие букеты с доставкой по всему городу</p>
+                    <a href="#" class="btn">Смотреть каталог</a>
+                </div>
 
-                    <div class="header__promo--img">
-                        <img src="img/flowers1.png" alt="Букет тюльпанов">
-                    </div>
+                <div class="header__promo--img">
+                    <img src="img/flowers1.png" alt="Букет тюльпанов">
+                </div>
 
-                    <div class="header__promo--img">
-                        <img src="img/flowers2.png" alt="Букет роз">
-                    </div>
+                <div class="header__promo--img">
+                    <img src="img/flowers2.png" alt="Букет роз">
                 </div>
             </div>
         </header> 
@@ -95,7 +95,7 @@
                     <h2 class="visually-hidden">Преимущества</h2>
                     <div class="benefits__block">
                         <svg class="icon">
-                            <use xlink:href="#delivery"></use>
+                            <use xlink:href="/svg/sprite_icons.svg#delivery"></use>
                         </svg>
                         <div class="benefits__text">
                             <h3>Быстрая доставка</h3>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="benefits__block">
                         <svg class="icon">
-                            <use xlink:href="#bouquet"></use>
+                            <use xlink:href="/svg/sprite_icons.svg#bouquet"></use>
                         </svg>
                         <div class="benefits__text">
                             <h3>Всегда свежие цветы</h3>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="benefits__block">
                         <svg class="icon">
-                            <use xlink:href="#foto"></use>
+                            <use xlink:href="/svg/sprite_icons.svg#foto"></use>
                         </svg>
                         <div class="benefits__text">
                             <h3>Отправляем фото цветов</h3>
@@ -121,65 +121,255 @@
                         </div>
                     </div>
                 </div>
-
-                  <svg class="icon">
-                    <use xlink:href="#card"></use>
-                  </svg>
-
-                  <svg class="icon">
-                    <use xlink:href="#florist"></use>
-                  </svg>
-
-                  <svg class="icon">
-                    <use xlink:href="#order"></use>
-                  </svg>
             </section>
             <section class="popular">
                 <div class="container">
-                    <div class="slider_wrap">
-                        <div class="slider__text"></div>
+                    <h2>Популярные букеты</h2>
+                    <div class="slider__wrap">
+                        <div class="slider__text">
+                            <h3>Букет «Нежность»</h3>
+                            <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                            <span>30 × 40 см</span>
+                            <span>3600 руб.</span>
+                            <a href="#" class="btn">Заказать</a>
+                        </div>
                         <div class="slider__img">
-                            <img src="" alt="flowers">
+                            <img src="/img/rose_bouquet.png" alt="flowers">
                         </div>
                     </div>
                     <div class="slider__arrows">
-                        <svg class="arrow">
-                            <use xlink:href="#arrow_left"></use>
-                          </svg>
-                          <svg class="arrow">
-                            <use xlink:href="#arrow_right"></use>
-                          </svg>
+                        <a href="#" class="left">
+                            <svg class="arrow">
+                                <use xlink:href="/svg/sprite_arrows.svg#arrow_left"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="right">
+                            <svg class="arrow">
+                                <use xlink:href="/svg/sprite_arrows.svg#arrow_right"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </section>
             <section class="catalog">
                 <div class="container">
                     <h2 class="visually-hidden">Разделы каталога</h2>
-                    <div class="catalog__section">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                    <div class="catalog__section">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                    <div class="catalog__section">
-                        <h3></h3>
-                        <p></p>
+                    <div class="catalog__wrap">
+                        <div class="catalog__part">
+                            <div class="catalog__text">
+                                <a href="#">Свадебные букеты</a>
+                                <p>Букеты для невест</p>
+                            </div>
+                        </div>
+                        <div class="catalog__part">
+                            <div class="catalog__text">
+                                <a href="#">Букеты с пионами</a>
+                                <p>Букеты с сезонными пионами</p>
+                            </div>
+                        </div>
+                        <div class="catalog__part">
+                            <div class="catalog__text">
+                                <a href="#">Выбрать букет</a>
+                                <p>Букеты в ассортименте</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </section>
-            <section class="discount"></section>
-            <section class="steps"></section>
-            <section class="news"></section>
-            <section class="reviews"></section>
-            <section class="contacts"></section>
+            <section class="discount">
+                <div class="container discount__wrap">
+                    <div class="discount__text">
+                        <div class="text__wrap">
+                            <h3>Скидка 10%<br> на первый заказ</h3>
+                            <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
+                        </div>
+                    </div>
+                    <div class="discount__img">
+                        <img src="/img/beautiful_bouquet.png" alt="Букет роз">
+                    </div>
+                </div>
+            </section>
+            <section class="steps">
+                <div class="container">
+                    <h2>4 шага к идеальному букету</h2>
+                    <div class="steps__wrap">
+                        <div class="steps__block">
+                            <svg class="icon">
+                                <use xlink:href="/svg/sprite_icons.svg#order"></use>
+                            </svg>
+                            <h3>Заказ</h3>
+                            <p>Выбирите понравившейся букет из каталога и оформите заказ</p>
+                        </div>
+                        <div class="steps__block">
+                            <svg class="icon">
+                                <use xlink:href="/svg/sprite_icons.svg#florist"></use>
+                            </svg>
+                            <h3>Уточнение деталей</h3>
+                            <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
+                        </div>
+                        <div class="steps__block">
+                            <svg class="icon">
+                                <use xlink:href="/svg/sprite_icons.svg#card"></use>
+                            </svg>
+                            <h3>Оплата</h3>
+                            <p>Оплатить заказ можно онлайн на сайте или при получении</p>
+                        </div>
+                    </div>
+                    <div class="steps__block">
+                        <svg class="icon">
+                            <use xlink:href="/svg/sprite_icons.svg#delivery"></use>
+                        </svg>
+                        <h3>Доставка</h3>
+                        <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="news__text">
+                        <h2>Следите за нашими<br>новостями</h2>
+                        <P>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</P>
+                        <div class="social__icon">
+                            <ul class="social__icon--brown">
+                                <li>
+                                    <a href="#">
+                                        <svg class="social__icon__brown">
+                                            <use xlink:href="/svg/sprite_social_icons-brown.svg#instagram_icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="social__icon__brown">
+                                            <use xlink:href="/svg/sprite_social_icons-brown.svg#facebook_icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="social__icon__brown">
+                                            <use xlink:href="/svg/sprite_social_icons-brown.svg#twitter_icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="news__img">
+                        <img src="/img/01bouquet.png" alt="Букет роз">
+                        <img src="/img/02bouquet.png" alt="Букет роз">
+                        <img src="/img/03bouquet.png" alt="Букет цветов">
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container reviews__cont">
+                    <h2>Отзывы</h2>
+                    <div class="reviews__wrap">
+                        <div class="reviews__part">
+                            <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+                            <span>Марина</span>
+                        </div>
+                        <div class="reviews__part">
+                            <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+                            <span>Татьяна</span>
+                        </div>
+                        <div class="reviews__part">
+                            <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+                            <span>Ольга</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                 <div class="contacts__text">
+                     <h2>Мы ждем вас</h2>
+                     <ul>
+                         <li>
+                             <p>Приходите к нам:<br>
+                                <span>Санкт-Петербург,<br>ул. Большая Конюшенная, 19</span>
+                            </p>
+                         </li>
+                         <li>
+                            <p>Режим работы:<br>
+                                <span>Пн-Вск, с 9-00 до 20-00</span>
+                            </p>
+                         </li>
+                         <li>
+                            <p>Позвоните нам:<br>
+                                <span><a href="tel:+ 7 (812) 983-47-19">+ 7 (812) 983-47-19</a></span>
+                            </p>
+                         </li>
+                         <li>
+                            <p>Напишите нам:<br>
+                                <span><a href="maito:info@botanika.ru">info@botanika.ru</a></span>
+                            </p>
+                         </li>
+                     </ul>
+                 </div>
+            </section>
         </main>
  
         <!-- footer -->
         <footer class="footer">
-
+            <div class="footer__wrap">
+                <div class="container footer__nav__wrap">
+                    <div class="logo">
+                        <a href="#" class="footer__logo">
+                            <img src="img/logo.png" alt="Botanika - Авторские букеты в Петербурге">
+                        </a>
+                    </div>
+                    <div class="footer__nav">
+                        <nav class="footer__nav">
+                            <ul class="footer__nav__list">
+                                <li>
+                                    <a href="#">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Спецпредложения</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Корзина</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="social__icons">
+                        <ul class="social__icon--white">
+                            <li>
+                                <a href="#">
+                                    <svg class="social__icon__white">
+                                        <use xlink:href="/svg/sprite_social_icons-white.svg#instagram_icon-white"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="social__icon__white">
+                                        <use xlink:href="/svg/sprite_social_icons-white.svg#facebook_icon-white"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="social__icon__white">
+                                        <use xlink:href="/svg/sprite_social_icons-white.svg#twitter_icon-white"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script src="js/jquery-3.6.0.min.js"></script>
