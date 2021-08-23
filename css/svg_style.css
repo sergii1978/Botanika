@@ -1,5 +1,24 @@
+.logo{
+  width: 100px;
+  height: 33px;
+}
+
 .icon { 
-  width: auto; 
-  height: 20px;
-  margin: .5em;
+  max-width: 82px; 
+  max-height: 52px;
+}
+
+.social_icon_link {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.social_icon {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.arrow {
+  width: 50px;
+  height: 16px;
 }

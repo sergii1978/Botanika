@@ -38,53 +38,59 @@
 
     <body>
         <!-- header -->
-        <header class="header">           
-            <nav class="header__nav">
-                <div class="nav__wrap">
-                    <div class="container">
-                        <ul class="header__nav__list">
-                            <li>
-                                <a href="#">Каталог</a>
-                            </li>
-                            <li>
-                                <a href="#">Доставка и оплата</a>
-                            </li>
-                            <li>
-                                <a href="#">Отзывы</a>
-                            </li>
-                            <li>
-                                <a href="#" class="logo">
-                                    <img src="img/logo.png" alt="Botanika - Авторские букеты в Петербурге">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Спецпредложения</a>
-                            </li>
-                            <li>
-                                <a href="#">Контакты</a>
-                            </li>
-                            <li>
-                                <a href="#">Корзина</a>
-                            </li>
-                        </ul>
+        <div class="header">    
+            <div class="header_navigation_wrapper">
+                <div class="container">
+                        <div class="header_logo logo_wrapper">
+                            <a href="#" class="logo_link">
+                                <svg class="logo">
+                                    <use xlink:href="svg/sprite_logo.svg#logo-brown"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navigation_list_wrapper">
+                            `<nav>
+                                <ul class="navigation_list">
+                                    <li>
+                                        <a href="#" class="navigation_link">Каталог</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navigation_link">Доставка и оплата</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navigation_link">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navigation_link">Спецпредложения</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navigation_link">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navigation_link">Корзина</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                </div>    
+            </div>  
+            <div class="container">
+                <div class="header__promo">
+                    <div class="header__promo--text">
+                        <h1>Авторские букеты 
+                            <span> в Петербурге</span>
+                        </h1>
+                        <p>Оригинальные свежие букеты с доставкой по всему городу</p>
+                        <a href="#" class="btn">Смотреть каталог</a>
                     </div>
-                </div>
-            </nav>
-            <div class="container header__promo">
-                <div class="header__promo--text">
-                    <h1>Авторские букеты 
-                        <span> в Петербурге</span>
-                    </h1>
-                    <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-                    <a href="#" class="btn">Смотреть каталог</a>
-                </div>
-
-                <div class="header__promo--img">
-                    <img src="img/flowers1.png" alt="Букет тюльпанов">
-                </div>
-
-                <div class="header__promo--img">
-                    <img src="img/flowers2.png" alt="Букет роз">
+    
+                    <div class="header__promo--img">
+                        <img src="img/flowers1.png" alt="Букет тюльпанов">
+                    </div>
+    
+                    <div class="header__promo--img">
+                        <img src="img/flowers2.png" alt="Букет роз">
+                    </div>
                 </div>
             </div>
         </header> 
@@ -229,25 +235,25 @@
                     <div class="news__text">
                         <h2>Следите за нашими<br>новостями</h2>
                         <p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-                        <div class="social__icon">
-                            <ul class="social__icon--brown">
+                        <div class="social_icons">
+                            <ul class="social_icons_list">
                                 <li>
-                                    <a href="#">
-                                        <svg class="social__icon__brown">
+                                    <a href="#" class="social_icon_link" aria-label="instagram">
+                                        <svg class="social_icon">
                                             <use xlink:href="svg/sprite_social_icons-brown.svg#instagram_icon"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <svg class="social__icon__brown">
+                                    <a href="#" class="social_icon_link" aria-label="facebook">
+                                        <svg class="social_icon">
                                             <use xlink:href="svg/sprite_social_icons-brown.svg#facebook_icon"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <svg class="social__icon__brown">
+                                    <a href="#" class="social_icon_link" aria-label="twitter">
+                                        <svg class="social_icon">
                                             <use xlink:href="svg/sprite_social_icons-brown.svg#twitter_icon"></use>
                                         </svg>
                                     </a>
@@ -312,56 +318,58 @@
  
         <!-- footer -->
         <footer class="footer">
-            <div class="footer__wrap">
-                <div class="container footer__nav__wrap">
-                    <div class="logo__wrap">
-                        <a href="#" class="footer__logo">
-                            <img src="img/logo__white.png" alt="Botanika - Авторские букеты в Петербурге">
+            <div class="footer_wrapper">
+                <div class="container footer_navigation_wrapper">
+                    <div class="logo_wrapper">
+                        <a href="#" class="logo_link">
+                            <svg class="logo">
+                                <use xlink:href="svg/sprite_logo.svg#logo-white"></use>
+                            </svg>
                         </a>
                     </div>
-                    <div class="footer__nav__menu">
-                        <nav class="footer__nav">
-                            <ul class="footer__nav__list">
+                    <div class="footer_navigation_menu">
+                        <nav>
+                            <ul class="navigation_list footer_navigation">
                                 <li>
-                                    <a href="#">Каталог</a>
+                                    <a href="#" class="navigation_link">Каталог</a>
                                 </li>
                                 <li>
-                                    <a href="#">Доставка и оплата</a>
+                                    <a href="#" class="navigation_link">Доставка и оплата</a>
                                 </li>
                                 <li>
-                                    <a href="#">Отзывы</a>
+                                    <a href="#" class="navigation_link">Отзывы</a>
                                 </li>
                                 <li>
-                                    <a href="#">Спецпредложения</a>
+                                    <a href="#" class="navigation_link">Спецпредложения</a>
                                 </li>
                                 <li>
-                                    <a href="#">Контакты</a>
+                                    <a href="#" class="navigation_link">Контакты</a>
                                 </li>
                                 <li>
-                                    <a href="#">Корзина</a>
+                                    <a href="#" class="navigation_link">Корзина</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="social__icons">
-                        <ul class="social__icon--white">
+                    <div class="social_icons">
+                        <ul class="social_icons_list">
                             <li>
-                                <a href="#">
-                                    <svg class="social__icon__white">
+                                <a href="#" class="social_icon_link" aria-label="instagram">
+                                    <svg class="social_icon">
                                         <use xlink:href="svg/sprite_social_icons-white.svg#instagram_icon-white"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <svg class="social__icon__white">
+                                <a href="#" class="social_icon_link" aria-label="facebook">
+                                    <svg class="social_icon">
                                         <use xlink:href="svg/sprite_social_icons-white.svg#facebook_icon-white"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <svg class="social__icon__white">
+                                <a href="#" class="social_icon_link" aria-label="twitter">
+                                    <svg class="social_icon">
                                         <use xlink:href="svg/sprite_social_icons-white.svg#twitter_icon-white"></use>
                                     </svg>
                                 </a>

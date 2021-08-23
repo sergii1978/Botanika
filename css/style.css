@@ -1,3 +1,5 @@
+@import url("../css/svg_style.css");
+
 body{
   padding-top: 26px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -8,7 +10,7 @@ body{
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,22 +31,37 @@ ul,li{
 
 
 /* header */
-.nav__wrap {
+.header_logo {
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  right: 50%;
+}
+
+.header_navigation_wrapper {
   display: flex;
+  justify-content: center;
   padding-top: 16px;
   padding-bottom: 16px;
   border-top: 1px solid #AE7C78;
   border-bottom: 1px solid #AE7C78;
 }
 
-.header__nav__list {
+.navigation_list_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 
-.header__nav__list a {
+.navigation_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navigation_list a {
   position: relative;
   text-decoration: none;
 }
@@ -85,8 +102,8 @@ ul,li{
   width: 100%;
 }
 
-.nav__wrap .logo::before,
-.nav__wrap .logo::after {
+.nav__wrap .logo-link::before,
+.nav__wrap .logo-link::after {
   background: none;
 }
 
@@ -109,11 +126,6 @@ ul,li{
 
 .slider__text span {
   display: block;
-}
-
-.arrow { 
-  width: 100%; 
-  height: auto;
 }
 
 
@@ -175,23 +187,42 @@ ul,li{
 /* section contacts */
 
 /* footer */
-.footer__wrap {
+.footer_wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #AE7C78;
 }
 
-.footer__nav__wrap {
+.footer_navigation_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer__nav__list {
+.footer_navigation_menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 800px;
 }
 
-.social__icon--white {
+
+.social_icons_list {
   display: flex;
   justify-content: space-between;
+  max-width: 96px;
+  height: 20px;
+}
+
+.social_icons_list li {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.social_icons_list li:first-child {
+  margin-left: 0;
+}
+
+.social_icons_list li:last-child {
+  margin-right: 0;
 }
 
