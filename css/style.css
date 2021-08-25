@@ -68,6 +68,13 @@ ul,li{
   text-decoration: none;
 }
 
+.header_navigation a {
+  font-family: 'Montserrat Regular';
+  font-size: 16px;
+  line-height: 20px;
+  color: #AE7C78;
+}
+
 .header_navigation a::after,
 .header_navigation a::after {
   position: absolute;
