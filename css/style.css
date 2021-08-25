@@ -1,8 +1,10 @@
+@import url("../css/fonts.css");
 @import url("../css/svg_style.css");
 
 body{
   padding-top: 26px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font‑display: swap;
 }
 
 * {
@@ -66,8 +68,8 @@ ul,li{
   text-decoration: none;
 }
 
-.nav__wrap a::after,
-.nav__wrap a::after {
+.header_navigation a::after,
+.header_navigation a::after {
   position: absolute;
   content: "";
   bottom: -4px;
@@ -79,8 +81,8 @@ ul,li{
   transform: translateX(-50%);
 }
 
-.nav__wrap a::before,
-.nav__wrap a::before {
+.header_navigation a::before,
+.header_navigation a::before {
   position: absolute;
   content: "";
   bottom: 19px;
@@ -92,13 +94,13 @@ ul,li{
   transform: translateX(-50%);
 }
 
-.nav__wrap a:hover::after,
-.nav__wrap a:hover::after {
+.header_navigation a:hover::after,
+.header_navigation a:hover::after {
   width: 100%;
 }
 
-.nav__wrap a:hover::before,
-.nav__wrap a:hover::before {
+.header_navigation a:hover::before,
+.header_navigation a:hover::before {
   width: 100%;
 }
 
