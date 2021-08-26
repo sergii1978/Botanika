@@ -76,20 +76,20 @@
                     </div>    
                 </div>  
                 <div class="container">
-                    <div class="header__promo">
-                        <div class="header__promo--text">
+                    <div class="header_promo">
+                        <div class="header_promo_text">
                             <h1>Авторские букеты 
                                 <span> в Петербурге</span>
                             </h1>
                             <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-                            <a href="#" class="btn">Смотреть каталог</a>
+                            <a href="#" class="button_link">Смотреть каталог</a>
                         </div>
         
-                        <div class="header__promo--img">
+                        <div class="header_promo_img">
                             <img src="img/flowers1.png" alt="Букет тюльпанов"  width="386" height="404">
                         </div>
         
-                        <div class="header__promo--img">
+                        <div class="header_promo_img">
                             <img src="img/flowers2.png" alt="Букет роз"  width="387" height="420">
                         </div>
                     </div>
@@ -101,29 +101,29 @@
             <section class="benefits">
                 <div class="container">
                     <h2 class="visually-hidden">Преимущества</h2>
-                    <div class="benefits__block">
+                    <div class="benefits_block">
                         <svg class="icon" width="82" height="52">
                             <use xlink:href="svg/sprite_icons.svg#delivery"></use>
                         </svg>
-                        <div class="benefits__text">
+                        <div class="benefits_text">
                             <h3>Быстрая доставка</h3>
                             <p>Можем собрать букет и передать его в доставку всего за час.</p>
                         </div>
                     </div>
-                    <div class="benefits__block">
+                    <div class="benefits_block">
                         <svg class="icon" width="52" height="52">
                             <use xlink:href="svg/sprite_icons.svg#bouquet"></use>
                         </svg>
-                        <div class="benefits__text">
+                        <div class="benefits_text">
                             <h3>Всегда свежие цветы</h3>
                             <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
                         </div>                        
                     </div>
-                    <div class="benefits__block">
+                    <div class="benefits_block">
                         <svg class="icon" width="59" height="52">
                             <use xlink:href="svg/sprite_icons.svg#foto"></use>
                         </svg>
-                        <div class="benefits__text">
+                        <div class="benefits_text">
                             <h3>Отправляем фото цветов</h3>
                             <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
                         </div>
@@ -133,19 +133,23 @@
             <section class="popular">
                 <div class="container">
                     <h2>Популярные букеты</h2>
-                    <div class="slider__wrap">
-                        <div class="slider__text">
-                            <h3>Букет «Нежность»</h3>
-                            <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-                            <span>30 × 40 см</span>
-                            <span>3600 руб.</span>
-                            <a href="#" class="btn">Заказать</a>
+                    <div class="slider_wrapper">
+                        <div class="slider_order_wrapper">
+                            <div class="slider_text_wrapper">
+                                <dl>
+                                    <dt class="bouquet_name">Букет «Нежность»</dt>
+                                    <dd class="description">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</dd>
+                                    <dd class="size">30 × 40 см</dd>
+                                    <dd class="price">3600 руб.</dd>
+                                </dl>
+                            </div>
+                            <button class="button">Заказать</button>
                         </div>
-                        <div class="slider__img">
+                        <div class="slider_img">
                             <img src="img/rose_bouquet.png" alt="flowers"  width="387" height="438">
                         </div>
                     </div>
-                    <div class="slider__arrows">
+                    <div class="slider_arrows">
                         <a href="#" class="left">
                             <svg class="arrow" width="50" height="10">
                                 <use xlink:href="svg/sprite_arrows.svg#arrow_left"></use>
@@ -162,21 +166,21 @@
             <section class="catalog">
                 <div class="container">
                     <h2 class="visually-hidden">Разделы каталога</h2>
-                    <div class="catalog__wrap">
-                        <div class="catalog__part">
-                            <div class="catalog__text">
+                    <div class="catalog_wrapper">
+                        <div class="catalog_block">
+                            <div class="catalog_text">
                                 <a href="#">Свадебные букеты</a>
                                 <p>Букеты для невест</p>
                             </div>
                         </div>
-                        <div class="catalog__part">
-                            <div class="catalog__text">
+                        <div class="catalog_block">
+                            <div class="catalog_text">
                                 <a href="#">Букеты с пионами</a>
                                 <p>Букеты с сезонными пионами</p>
                             </div>
                         </div>
-                        <div class="catalog__part">
-                            <div class="catalog__text">
+                        <div class="catalog_block">
+                            <div class="catalog_text">
                                 <a href="#">Выбрать букет</a>
                                 <p>Букеты в ассортименте</p>
                             </div>
@@ -185,14 +189,14 @@
                 </div>
             </section>
             <section class="discount">
-                <div class="container discount__wrap">
-                    <div class="discount__text">
-                        <div class="text__wrap">
+                <div class="container discount_wrapper">
+                    <div class="discount_text">
+                        <div class="text_wrapper">
                             <h3>Скидка 10%<br> на первый заказ</h3>
                             <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
                         </div>
                     </div>
-                    <div class="discount__img">
+                    <div class="discount_img">
                         <img src="img/beautiful_bouquet.png" alt="Букет роз"  width="590" height="391">
                     </div>
                 </div>
@@ -200,22 +204,22 @@
             <section class="steps">
                 <div class="container">
                     <h2>4 шага к идеальному букету</h2>
-                    <div class="steps__wrap">
-                        <div class="steps__block">
+                    <div class="steps_wrapper">
+                        <div class="steps_block">
                             <svg class="icon" width="66" height="52">
                                 <use xlink:href="svg/sprite_icons.svg#order"></use>
                             </svg>
                             <h3>Заказ</h3>
                             <p>Выберите понравившейся букет из каталога и оформите заказ</p>
                         </div>
-                        <div class="steps__block">
+                        <div class="steps_block">
                             <svg class="icon" width="38" height="52">
                                 <use xlink:href="svg/sprite_icons.svg#florist"></use>
                             </svg>
                             <h3>Уточнение деталей</h3>
                             <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
                         </div>
-                        <div class="steps__block">
+                        <div class="steps_block">
                             <svg class="icon" width="70" height="52">
                                 <use xlink:href="svg/sprite_icons.svg#card"></use>
                             </svg>
@@ -223,7 +227,7 @@
                             <p>Оплатить заказ можно онлайн на сайте или при получении</p>
                         </div>
                     </div>
-                    <div class="steps__block">
+                    <div class="steps_block">
                         <svg class="icon" width="82" height="52">
                             <use xlink:href="svg/sprite_icons.svg#delivery"></use>
                         </svg>
@@ -234,7 +238,7 @@
             </section>
             <section class="news">
                 <div class="container">
-                    <div class="news__text">
+                    <div class="news_text">
                         <h2>Следите за нашими<br>новостями</h2>
                         <p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
                         <div class="social_icons">
@@ -263,7 +267,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="news__img">
+                    <div class="news_img">
                         <img src="img/01bouquet.png" alt="Букет роз"  width="285" height="220">
                         <img src="img/02bouquet.png" alt="Букет роз"  width="285" height="220">
                         <img src="img/03bouquet.png" alt="Букет цветов"  width="387" height="460">
@@ -271,50 +275,58 @@
                 </div>
             </section>
             <section class="reviews">
-                <div class="container reviews__cont">
+                <div class="container reviews_container">
                     <h2>Отзывы</h2>
-                    <div class="reviews__wrap">
-                        <div class="reviews__part">
-                            <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
-                            <span>Марина</span>
+                    <div class="reviews_wrapper">
+                        <div class="reviews_block">
+                            <blockquote>
+                                <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+                                <cite>Марина</cite>
+                            </blockquote>
                         </div>
-                        <div class="reviews__part">
-                            <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
-                            <span>Татьяна</span>
+                        <div class="reviews_block">
+                            <blockquote>
+                                <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+                                <cite>Татьяна</cite>
+                            </blockquote>
                         </div>
-                        <div class="reviews__part">
-                            <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
-                            <span>Ольга</span>
+                        <div class="reviews_block">
+                            <blockquote>
+                                <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+                                <cite>Ольга</cite>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="contacts">
-                 <div class="contacts__text">
-                     <h2>Мы ждем вас</h2>
-                     <ul>
-                         <li>
-                             <p>Приходите к нам:<br>
-                                <span>Санкт-Петербург,<br>ул. Большая Конюшенная, 19</span>
-                            </p>
-                         </li>
-                         <li>
-                            <p>Режим работы:<br>
-                                <span>Пн-Вск, с 9-00 до 20-00</span>
-                            </p>
-                         </li>
-                         <li>
-                            <p>Позвоните нам:<br>
-                                <span><a href="tel:+78129834719">+7 (812) 983-47-19</a></span>
-                            </p>
-                         </li>
-                         <li>
-                            <p>Напишите нам:<br>
-                                <span><a href="maito:info@botanika.ru">info@botanika.ru</a></span>
-                            </p>
-                         </li>
-                     </ul>
-                 </div>
+                <div class="container">
+                    <div class="contacts_text">
+                        <h2>Мы ждем вас</h2>
+                        <ul>
+                            <li>
+                                <p>Приходите к нам:<br>
+                                   <span>Санкт-Петербург,<br>ул. Большая Конюшенная, 19</span>
+                               </p>
+                            </li>
+                            <li>
+                               <p>Режим работы:<br>
+                                   <span>Пн-Вск, с 9-00 до 20-00</span>
+                               </p>
+                            </li>
+                            <li>
+                               <p>Позвоните нам:<br>
+                                   <span><a href="tel:+78129834719">+7 (812) 983-47-19</a></span>
+                               </p>
+                            </li>
+                            <li>
+                               <p>Напишите нам:<br>
+                                   <span><a href="maito:info@botanika.ru">info@botanika.ru</a></span>
+                               </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
  
