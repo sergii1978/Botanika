@@ -46,13 +46,12 @@ h2 {
 .header_logo {
   position: absolute;
   top: 36px;
-  left: 50%;
-  right: 50%;
+  left: calc(50% - 75px);
 }
 
 .header_navigation_wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
   border-top: 1px solid #AE7C78;
@@ -68,8 +67,12 @@ h2 {
 
 .navigation_list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
+
+.navigation_list li {
   margin: 0 auto;
 }
 
@@ -79,6 +82,13 @@ h2 {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+}
+
+.header_navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-content: space-between;
 }
 
 .header_navigation a {
@@ -190,16 +200,28 @@ h2 {
 
 /* section benefits */
 .benefits_wrapper {
-  text-align: center;
+  /* text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+
+.benefits_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .benefits_text {
+  margin-left: 20px;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
 }
+
 
 .benefits_text h3 {
   font-family: 'Montserrat Medium';
