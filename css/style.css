@@ -1,9 +1,9 @@
-@import url("../css/fonts.css");
-@import url("../css/svg_style.css");
-
 body{
+  /* min-width: 1220px; */
   padding-top: 26px;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
   font‑display: swap;
   color: #ae7c78;
 }
@@ -45,6 +45,10 @@ h2 {
 /* header */
 .header {
   margin-bottom: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #AE7C78;
+  border-bottom: 1px solid #AE7C78;
 }
 
 h1 {
@@ -60,10 +64,7 @@ h1 {
 .header_navigation_wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-top: 1px solid #AE7C78;
-  border-bottom: 1px solid #AE7C78;
+
 }
 
 .navigation_list_wrapper {
