@@ -43,48 +43,46 @@
         <!-- header -->
         <header class="header">  
             <div class="container">
-                <div class="header_navigation_wrapper">
-                    <div class="header_logo logo_wrapper">
-                        <a href="#" class="logo_link">
-                            <svg class="logo" width="100" height="33">
-                                <use xlink:href="svg/sprite_logo.svg#logo-brown"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="navigation_list_wrapper">
-                        <nav>
-                            <ul class="navigation_list header_navigation">
-                                <li>
-                                    <a href="#" class="navigation_link">Каталог</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Доставка и оплата</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Отзывы</a>
-                                </li>
-                                <li>
+                <div class="header_logo logo_wrapper">
+                    <a href="#" class="logo_link">
+                        <svg class="logo" width="100" height="33">
+                            <use xlink:href="svg/sprite_logo.svg#logo-brown"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navigation_list_wrapper flex-wrap">
+                    <nav>
+                        <ul class="navigation_list header_navigation flex-wrap">
+                            <li>
+                                <a href="#" class="navigation_link">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Доставка и оплата</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Отзывы</a>
+                            </li>
+                            <li>
 
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Спецпредложения</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Контакты</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Корзина</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div> 
-            </div>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Спецпредложения</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Корзина</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
         </header> 
 
         <main>
             <section class="promo">
-                <div class="header_promo">
+                <div class="container header_promo">
                     <div class="header_promo_text">
                         <h1>Авторские букеты 
                             <span> в Петербурге</span>
@@ -93,40 +91,39 @@
                         <a href="#" class="button_link">Смотреть каталог</a>
                     </div>
 
-                    <div class="header_promo_img img-down">
-                        <img src="img/flowers1.png" alt="Букет тюльпанов"  width="386" height="404">
-                    </div>
-
-                    <div class="header_promo_img img-top">
-                        <img src="img/flowers2.png" alt="Букет роз"  width="387" height="420">
-                    </div>
+                    <img src="img/flowers1.png" alt="Букет тюльпанов"  width="386" height="404">
+                    <img src="img/flowers2.png" alt="Букет роз"  width="387" height="420">
                 </div>
             </section>
             <section class="benefits">
                 <div class="container benefits_wrapper">
                     <h2 class="visually-hidden">Преимущества</h2>
-                    <div class="benefits_block">
-                        <svg class="icon" width="82" height="52">
+                    <div class="benefits_block flex-wrap">
+                        <img src="svg/delivery.svg" class="icon" alt="delivery" width="82" height="52">
+                        <!-- <svg class="icon" width="82" height="52">
                             <use xlink:href="svg/sprite_icons.svg#delivery"></use>
-                        </svg>
+                        </svg> -->
                         <div class="benefits_text">
                             <h3>Быстрая доставка</h3>
                             <p>Можем собрать букет и передать его в доставку всего за час.</p>
                         </div>
                     </div>
-                    <div class="benefits_block">
-                        <svg class="icon" width="52" height="52">
+                    <div class="benefits_block flex-wrap">
+                        <img src="svg/bouquet.svg" class="icon" alt="bouquet" width="52" height="52">
+                        <!-- <svg class="icon" width="52" height="52">
                             <use xlink:href="svg/sprite_icons.svg#bouquet"></use>
-                        </svg>
+                        </svg> -->
                         <div class="benefits_text">
                             <h3>Всегда свежие цветы</h3>
                             <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
                         </div>                        
                     </div>
-                    <div class="benefits_block">
-                        <svg class="icon" width="59" height="52">
+                    <div class="benefits_block flex-wrap">
+                        <img src="svg/foto.svg" class="icon" alt="foto" width="59" height="52">
+
+                        <!-- <svg class="icon" width="59" height="52">
                             <use xlink:href="svg/sprite_icons.svg#foto"></use>
-                        </svg>
+                        </svg> -->
                         <div class="benefits_text">
                             <h3>Отправляем фото цветов</h3>
                             <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
@@ -138,7 +135,7 @@
             <section class="popular">
                 <div class="container">
                     <h2>Популярные букеты</h2>
-                    <div class="slider_wrapper">
+                    <div class="slider_wrapper flex-wrap">
                         <div class="slider_order_wrapper">
                             <div class="slider_text_wrapper">
                                 <dl>
@@ -158,13 +155,11 @@
                         <a href="#" class="left">
                             <svg class="arrow" width="50" height="10">
                                 <use xlink:href="svg/sprite_arrows.svg#arrow_left"></use>
-                            </svg>
-                        </a>
+                            </svg></a>
                         <a href="#" class="right">
                             <svg class="arrow" width="50" height="10">
                                 <use xlink:href="svg/sprite_arrows.svg#arrow_right"></use>
-                            </svg>
-                        </a>
+                            </svg></a>
                     </div>
                 </div>
             </section>
@@ -172,20 +167,20 @@
             <section class="catalog">
                 <div class="container">
                     <h2 class="visually-hidden">Разделы каталога</h2>
-                    <div class="catalog_wrapper">
-                        <div class="catalog_block">
+                    <div class="catalog_wrapper flex-wrap">
+                        <div class="catalog_block flex-wrap">
                             <div class="catalog_text">
                                 <a href="#" class="catalog_link">Свадебные букеты</a>
                                 <p class="link_description">Букеты для невест</p>
                             </div>
                         </div>
-                        <div class="catalog_block">
+                        <div class="catalog_block flex-wrap">
                             <div class="catalog_text">
                                 <a href="#" class="catalog_link">Букеты с пионами</a>
                                 <p class="link_description">Букеты с сезонными пионами</p>
                             </div>
                         </div>
-                        <div class="catalog_block">
+                        <div class="catalog_block flex-wrap">
                             <div class="catalog_text">
                                 <a href="#" class="catalog_link">Выбрать букет</a>
                                 <p class="link_description">Букеты в ассортименте</p>
@@ -196,7 +191,7 @@
             </section>
 
             <section class="discount">
-                <div class="container discount_wrapper">
+                <div class="container discount_wrapper flex-wrap">
                     <div class="discount_text">
                         <div class="text_wrapper">
                             <h3>Скидка 10%<br> на первый заказ</h3>
@@ -212,7 +207,7 @@
             <section class="steps">
                 <div class="container steps_container">
                     <h2>4 шага к идеальному букету</h2>
-                    <div class="steps_wrapper">
+                    <div class="steps_wrapper flex-wrap">
                         <div class="steps_block">
                             <svg class="icon" width="66" height="52">
                                 <use xlink:href="svg/sprite_icons.svg#order"></use>
@@ -251,7 +246,7 @@
                         <h2>Следите за нашими<br>новостями</h2>
                         <p>Подписывайтесь на наши<br>соцсети и узнавайте <br>о новинках и акциях первым.</p>
                         <div class="social_icons">
-                            <ul class="social_icons_list">
+                            <ul class="social_icons_list flex-wrap">
                                 <li>
                                     <a href="#" class="social_icon_link" aria-label="instagram">
                                         <svg class="social_icon" width="20" height="20">
@@ -287,7 +282,7 @@
             <section class="reviews">
                 <div class="container reviews_container">
                     <h2>Отзывы</h2>
-                    <div class="reviews_wrapper">
+                    <div class="reviews_wrapper flex-wrap">
                         <div class="reviews_block">
                             <blockquote>
                                 <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
@@ -311,33 +306,31 @@
             </section>
             
             <section class="contacts">
-                <div class="contacts_wrapper">
-                    <div class="container">
-                        <div class="contacts_text">
-                            <h2>Мы ждем вас</h2>
-                            <ul>
-                                <li>
-                                    <p>Приходите к нам:<br>
-                                       <span>Санкт-Петербург,<br>ул. Большая Конюшенная, 19</span>
-                                   </p>
-                                </li>
-                                <li>
-                                   <p>Режим работы:<br>
-                                       <span>Пн-Вск, с 9-00 до 20-00</span>
-                                   </p>
-                                </li>
-                                <li>
-                                   <p>Позвоните нам:<br>
-                                       <span><a href="tel:+78129834719">+7 (812) 983-47-19</a></span>
-                                   </p>
-                                </li>
-                                <li>
-                                   <p>Напишите нам:<br>
-                                       <span><a href="maito:info@botanika.ru">info@botanika.ru</a></span>
-                                   </p>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="container">
+                    <div class="contacts_text">
+                        <h2>Мы ждем вас</h2>
+                        <ul>
+                            <li>
+                                <p>Приходите к нам:<br>
+                                    <span>Санкт-Петербург,<br>ул. Большая Конюшенная, 19</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Режим работы:<br>
+                                    <span>Пн-Вск, с 9-00 до 20-00</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Позвоните нам:<br>
+                                    <span><a href="tel:+78129834719">+7 (812) 983-47-19</a></span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Напишите нам:<br>
+                                    <span><a href="maito:info@botanika.ru">info@botanika.ru</a></span>
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -345,64 +338,62 @@
  
         <!-- footer -->
         <footer class="footer">
-            <div class="footer_wrapper">
-                <div class="container footer_navigation_wrapper">
-                    <div class="logo_wrapper">
-                        <a href="#" class="logo_link">
-                            <svg class="logo" width="100" height="33">
-                                <use xlink:href="svg/sprite_logo.svg#logo-white"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="footer_navigation_menu">
-                        <nav>
-                            <ul class="navigation_list footer_navigation">
-                                <li>
-                                    <a href="#" class="navigation_link">Каталог</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Доставка и оплата</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Отзывы</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Спецпредложения</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Контакты</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="navigation_link">Корзина</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="social_icons">
-                        <ul class="social_icons_list">
+            <div class="container footer_navigation_wrapper flex-wrap">
+                <div class="logo_wrapper">
+                    <a href="#" class="logo_link">
+                        <svg class="logo" width="100" height="33">
+                            <use xlink:href="svg/sprite_logo.svg#logo-white"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer_navigation_menu flex-wrap">
+                    <nav>
+                        <ul class="navigation_list footer_navigation flex-wrap">
                             <li>
-                                <a href="#" class="social_icon_link" aria-label="instagram">
-                                    <svg class="social_icon" width="20" height="20">
-                                        <use xlink:href="svg/sprite_social_icons-white.svg#instagram_icon-white"></use>
-                                    </svg>
-                                </a>
+                                <a href="#" class="navigation_link">Каталог</a>
                             </li>
                             <li>
-                                <a href="#" class="social_icon_link" aria-label="facebook">
-                                    <svg class="social_icon" width="12" height="20">
-                                        <use xlink:href="svg/sprite_social_icons-white.svg#facebook_icon-white"></use>
-                                    </svg>
-                                </a>
+                                <a href="#" class="navigation_link">Доставка и оплата</a>
                             </li>
                             <li>
-                                <a href="#" class="social_icon_link" aria-label="twitter">
-                                    <svg class="social_icon" width="26" height="20">
-                                        <use xlink:href="svg/sprite_social_icons-white.svg#twitter_icon-white"></use>
-                                    </svg>
-                                </a>
+                                <a href="#" class="navigation_link">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Спецпредложения</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_link">Корзина</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
+                </div>
+                <div class="social_icons">
+                    <ul class="social_icons_list flex-wrap">
+                        <li>
+                            <a href="#" class="social_icon_link" aria-label="instagram">
+                                <svg class="social_icon" width="20" height="20">
+                                    <use xlink:href="svg/sprite_social_icons-white.svg#instagram_icon-white"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social_icon_link" aria-label="facebook">
+                                <svg class="social_icon" width="12" height="20">
+                                    <use xlink:href="svg/sprite_social_icons-white.svg#facebook_icon-white"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social_icon_link" aria-label="twitter">
+                                <svg class="social_icon" width="26" height="20">
+                                    <use xlink:href="svg/sprite_social_icons-white.svg#twitter_icon-white"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
