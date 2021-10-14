@@ -24,13 +24,16 @@ body{
   display: flex;
 }
 
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 ul,li{
@@ -59,14 +62,17 @@ h2 {
   border-bottom: 1px solid #AE7C78;
 }
 
-h1 {
-  margin-top: -10px;
+.header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header_logo {
   position: absolute;
-  top: 9px;
-  left: calc(50% - 75px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navigation_list_wrapper {
@@ -75,17 +81,17 @@ h1 {
   margin: 0 auto;
 }
 
-.navigation_list {
+.nav_list {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 
-.navigation_list li {
+.nav_list li {
   margin: 0 auto;
 }
 
-.navigation_list a {
+.nav_list a {
   position: relative;
   font-family: 'Montserrat Regular';
   font-size: 16px;
@@ -93,19 +99,19 @@ h1 {
   text-decoration: none;
 }
 
-.header_navigation {
+.header_nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     justify-content: space-between;
 }
 
-.header_navigation a {
+.header_nav a {
   color: #ae7c78;
 }
 
-.header_navigation a::after,
-.header_navigation a::after {
+.header_nav a::after,
+.header_nav a::after {
   position: absolute;
   content: "";
   bottom: -4px;
@@ -117,8 +123,8 @@ h1 {
   transform: translateX(-50%);
 }
 
-.header_navigation a::before,
-.header_navigation a::before {
+.header_nav a::before,
+.header_nav a::before {
   position: absolute;
   content: "";
   bottom: 19px;
@@ -130,19 +136,24 @@ h1 {
   transform: translateX(-50%);
 }
 
-.header_navigation a:hover::after,
-.header_navigation a:hover::after {
+.header_nav a:hover::after,
+.header_nav a:hover::after {
   width: 100%;
 }
 
-.header_navigation a:hover::before,
-.header_navigation a:hover::before {
+.header_nav a:hover::before,
+.header_nav a:hover::before {
   width: 100%;
 }
 
 .nav__wrap .logo-link::before,
 .nav__wrap .logo-link::after {
   background: none;
+}
+
+/* section promo */
+h1 {
+  margin-top: -10px;
 }
 
 .header_promo {
@@ -218,16 +229,16 @@ h1 {
   cursor: pointer;
 }
 
-..header_promo img {
+.header_promo img {
   max-width: 100%;
 }
 
 
-.header_promo:first-child img {
+.header_promo img:first-child {
   margin-top: 40px;
 }
 
-.header_promo:last-child img {
+.header_promo img:last-child {
   margin-bottom: 16px;
 }
 
